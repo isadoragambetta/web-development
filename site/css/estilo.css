@@ -1,0 +1,358 @@
+/*O seletor * seleciona cada um dos elementos do meu documento html*/
+*{
+	/* Zerar as propriedades de margin e padding de todos os elementos, 
+	assim teremos maior controle sobre o conteúdo.*/
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	
+	font-family: Camphor Pro, Myriad Variable Concept, sans-serif;
+	font-size: 18px;
+	background-color: #FFF;
+}
+
+#container{
+	min-width: 600px;
+	max-width: 960px;
+	background-color: #C0C0C0;
+	margin: 0 auto;
+}
+
+/***********************/
+/******CABEÇALHO********/
+/***********************/
+
+header{
+	width: 100%;
+	height: 70px;
+	background-color: #573258;
+	text-align: left;
+}
+
+header h1{
+	padding: 0;
+	color: #FFF;
+	margin-left: 50px;
+	margin-top: 80px;
+	margin-right: 25px;
+	font-family: Camphor Pro, Myriad Variable Concept, sans-serif;
+	color:#940F5E;
+	font-size: 40px;
+}
+
+header img {
+	width: 73px;
+	float: right;
+	padding-top: 20px;
+}
+
+/***********************/
+/******MENU NAV********/
+/*********************/
+
+header nav{
+	background-color: #FFFFFF;
+	width: 100%;
+	height: 75px;
+	padding:15px;
+}
+
+header nav img{
+	width: 100px;
+	float: left;
+	padding-top:0px;
+
+}
+
+header nav ul{
+	padding-top: 30px;
+	text-align: center;
+}
+
+header nav ul li{
+	display: inline-block;
+	list-style-type: none;
+	padding: 8px 10px;
+	margin-right: 20px;
+}
+
+header nav ul li:hover,
+header nav ul li:active{
+	background-color: #E0C419;
+}
+
+header nav ul li a{
+	text-decoration: none;
+	color:#078A94;
+	font-weight: bold;
+}
+
+
+/***********************/
+/****NOSSOS AMIGOS*****/
+/*********************/
+
+#amigos{
+	width: 100%;
+	height: 700px;
+	background-color: #E0C419;	
+}
+
+
+section h2{
+	font-family:Camphor Pro, Myriad Variable Concept, sans-serif;
+	font-size: 40px;
+	color:#FFFFFF;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 10px;
+}
+
+
+.container2{
+	width: 100%;
+	padding-top: 60px;
+}
+
+section img{
+	text-align: center;
+	width: 150px;
+}
+
+
+#amigos q{
+	font-size: 14px;
+	color:#000;
+	text-align: center;
+}
+
+#quote{
+	text-align: left;
+}
+
+
+.linha{
+	width: 100%;
+	text-align: center;
+}
+
+
+.coluna{
+	width: 30%;
+	height: 400px;
+	display: inline-block;
+	vertical-align: top;
+	background-color: rgba(200, 200, 200, 0.4);
+	padding-top: 6px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+
+
+
+/***********************/
+/***** PETS BLOG ******/
+/*********************/
+
+
+main{
+	width: 100%;
+	height: 700px;
+}
+
+main section{
+	width: 100%;
+	height: 40%;
+	float: left;
+}
+
+#blog{
+	width: 100%;
+	height: 500px;
+	background-color:#078A94;
+}
+
+#divblog{
+	padding: 20px;
+}
+
+
+main section h2{
+	font-family:Camphor Pro, Myriad Variable Concept, sans-serif;
+	font-size: 40px;
+	color:#FFFFFF;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 10px;
+}
+
+#blog figure{
+	width: 35%;
+	height: 200px;
+	margin:25px 20px;
+	float: left;
+	padding-left: 15px;
+}
+
+#blog figure img{
+	width: 100%;
+}
+
+#blog p{
+	font-family: Camphor Pro, Myriad Variable Concept, sans-serif;
+	width: 54%;
+	float: left;
+	margin-top: 25px;
+	padding-right: 15px;
+	color: #FFFFFF;
+}
+
+
+/***********************/
+/**** NEWSLETTER ******/ 
+/*********************/  
+/*ATENÇÃO!!!*/ 
+/*ALGUMAS DAS CONFIGURAÇÕES DE "main" E "section" JÁ ESTÃO CONFIGURADAS ACIMA!!*/
+/*********************/
+
+
+#newsletter{
+	width: 100%;
+	height: 200px;
+	background-color:#940F5E;
+}
+
+
+#containernews{
+	width: 100%;
+	margin-left: 130px;
+}
+
+
+section form{
+	font-family: Camphor Pro, Myriad Variable Concept, sans-serif;
+	font-size: 20px;
+	color: #FFF;
+	line-height: 45px;
+	text-align: center;	
+}
+
+
+main section h3{
+	width: 50%;
+	font-family:Camphor Pro, Myriad Variable Concept, sans-serif;
+	font-size: 25px;
+	color:#FFFFFF;
+	text-align: left;
+	padding-top: 60px;
+}
+
+
+form fieldset {
+	border-radius: 15px;
+	border-style: none;
+}
+
+
+#idemail {
+	border-radius: 15px;
+	padding: 10px;
+	padding-right: 80px;
+	width: 220px;
+}
+
+
+#enviar{
+	padding: 10px 20px;
+	border-radius: 15px;
+	background-color: #FFFFFF;
+}
+
+
+.linha3{
+	width: 100%;
+	padding-left: 100px;
+}
+
+
+.coluna3{
+	width: 48%;
+	display: table-cell;
+	height: 140px;
+}
+
+
+.coluna3B{
+	width: 48%;
+	display: table-cell;
+	height: 140px;
+	text-align: left;
+}
+
+
+/***********************/
+/***** RODAPÉ *********/
+/*********************/
+
+
+footer{
+	width: 100%;
+	height: 495px;
+	background-color:#940F5E;
+	text-align: center;
+}
+
+
+.linha2{
+	text-align: left;
+	margin-top: 100px;
+	vertical-align: top;
+	padding: 30px;
+}
+
+ion-icon{
+	height: 30px;
+	color: #E0C419
+}
+
+
+#redes{
+	padding-left: 28px;
+}
+
+
+footer p{
+	font-size: 18px;
+	width: 100%;
+	color: #FFF;
+	margin-right: 20px;
+	vertical-align: middle;
+	display: inline;
+}
+
+footer img{
+	width: 100%;
+	float: left;
+	margin-top: 250px;
+}
+
+footer nav{
+	width: 100%;
+	height: 75px;
+}
+
+
+footer nav ul li{
+	display: inline-block;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+footer nav ul li a{
+	text-decoration: none;
+	font-weight: bold;
+
+}

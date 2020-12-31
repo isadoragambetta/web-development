@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<!-- Importação da folha de estilo -->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<meta charset="utf-8">
+	<!-- Definição do estilo da página -->
+	<style type="text/css">
+		/*Sobrescreve a propriedade altura que havia sido definida em estilo.css*/
+		header{
+			height: 50vh;			
+			/*Define duas imagens de fundo, sendo a primeira com transparência*/
+			background-image: url(img/banner2.png);
+			/*Ajusta o tamanho da imagem de fundo para cobrir todo o fundo*/
+			background-size: cover;
+			background-position: center bottom;
+		}
+		/*A consulta de mídia é uma técnica CSS introduzida no CSS3. Ele usa a @media regra para incluir um bloco de propriedades CSS apenas se uma determinada condição for verdadeira. Se a janela do navegador tiver 1500 px ou menos, a altura será 80vh; caso contrário, será 50vh, altura estabelecida no header dentro deste código.*/
+		@media screen and (max-width: 1500px) {
+			header{
+			height: 80vh;			
+			}
+		}
+	</style>
+	<!-- comentário anterior ao feedback -->
+	<!-- Viewport controla o tamanho da janela de visualização -->
+	<!-- comnetário pós feedback -->
+	<!-- O HTML5 introduziu um método para permitir que os web designers controlem a janela de visualização, por meio da <meta>tag. Você deve incluir o seguinte <meta>elemento de janela de visualização em todas as suas páginas da web: <meta name="viewport" content="width=device-width, initial-scale=1.0"> Isso fornece ao navegador instruções sobre como controlar as dimensões e a escala da página. Fonte: https://www.w3schools.com/css/css_rwd_viewport.asp-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>ONG PETS</title>
+</head>
+<body>
+
+	<div id="container">
+
+
+		<!-- Cabeçalho do site -->
+		<header>
+			<img id=login alt="foto de login no site" src="img/login.png">
+			<!-- Menu de navegação -->
+			<nav>
+			<a href="index.html" target="_blank">
+				<img alt="desenho de cachorro" src="img/logo.png">
+			</a>
+			<!-- lisata não ordenada -->
+			<ul>
+				<!-- íntem da lista-->
+				<li>
+					<!-- link -->
+					<a href="#">Sobre Nós</a>
+
+				</li>
+				<li>
+					<!-- link -->
+					<a href="listadogs.html" target="_blank">Pets</a>
+
+				</li>
+				<li>
+					<!-- link -->
+					<a href="queroadotar.html" target="_blank">Quero Adotar</a>
+
+				</li>
+				<li>
+					<!-- link -->
+					<a href="contato.html" target="_blank">Contato</a>
+
+				</li>
+			</ul>
+			</nav>
+			<h1>Amigos que<br>não te abandonam!</h1>
+		</header>
+
+
+		<!-- Seção do site -->
+		<section id="amigos">
+			<h2>NOSSOS AMIGOS</h2>
+			<div class="container2">
+				<!-- Para separar as imagens e conseguir colocá-las em ordem alinhadas no centro e com os textos, coloquei em <div> para separar como "caixas" -->
+				<div class="linha">
+					<!-- Agrupei o que eu gostaria de alinhar com a mesma "class", mas em containers diferentes para poder colocar os textos abaixo. Como se fosse uma tabela de divs -->
+					<div class="coluna">
+						<img alt="cachorro marrom com a língua de fora"  src="img/cao1.png">
+						<!-- Agrupei o que eu gostaria de alinhar com a mesma "class", mas em containers diferentes para poder colocar os textos abaixo. Como se fosse uma tabela de divs -->
+						<br>
+						<q id="quote">Lucy já está mais soltinha 😍💕, mais faceira mas ainda precisa passar por consulta pra sabermos o real estado de saúde dela. Tem uma certa resistência pra comer ração seca, provavelmente se alimentava com restos de comida e é normal que a transição leve mais tempo nesses casos.</q>
+						<br>
+						<br>
+						<br>
+						<h4 id="depo"> — Joana, dona de Lucy.</h4>
+					</div>
+					<div class="coluna">
+						<img alt="cachorro preto e branco"  src="img/cao2.png">
+						<br>
+						<q>O Tropeço está muito bem, saudável, ativo e brincalhão 🥰 de vacina tomada poderá ser encaminhado para adoção! E com essa carinha fofa não vai ser difícil, né?! 💕 Além dele, a Baleia e o Bernardo também passaram por atendimento.</q>
+						<br>
+						<br>
+						<br>
+						<br>
+						<h4 id="depo2"> — Anderson, dono do Tropeço.</h4>
+					</div>
+					<div class="coluna">
+						<img alt="cachorro marrom recebendo carinho"  src="img/cao3.png">
+						<br>
+						<q>Bianca foi ADOTADA! 💗💗💗🥰 Bia, como se chama agora, ganhou a vida que nasceu pra ter: cachorrinha de apartamento, caminha confortável, banho na petshop, boa ração, passeios e humanas garantindo a dose diária de amor 💗 como não se adaptar?! essa foi fácil!</q>
+						<br>
+						<br>
+						<br>
+						<h4 id="depo3"> — Bruno, dono da Bia.</h4>
+					</div>
+				</div>				
+			</div>
+		</section>
+
+
+		<!-- Conteúdo Principal da Página -->
+		<main>
+
+			<!-- Blog -->
+			<section id="blog">
+				<div id="divblog">
+					<h2>PETS BLOG</h2>
+
+					<!-- Figura -->
+					<figure>
+						<img alt="cachorro idoso" src="img/idoso.jpg">
+					</figure>
+					<!-- Parágrafo -->
+					<p>COMO LIDAR COM A VELHICE DOS NOSSOS AMIGOS?<br><br>Essa talvez seja uma das verdades mais dolorosas de aceitar: os cãezinhos também envelhecem com o passar dos anos. E quando a transição de idade chegar, acontecerá uma série de transformações no cachorro idoso. Nesse caso, é importante se preparar para essas mudanças a fim de proporcionar qualidade de vida ao velhinho de quatro patas. Assim, você retribui todo o carinho e companheirismo que ele ofereceu durante tantos anos a você.<a href="leiamais.html" target="_blank"> Para isso, continue lendo... </a></p>
+				</div>
+			</section>
+
+			<!-- Newsletter -->
+			<section id="newsletter">
+				<div id="containernews">
+
+					<form name="email" action="recebadados.php" method="POST">
+						<div class="linha3">
+							<div class="coluna3">
+								<h3>Newsletter</h3>
+							</div>
+							<div class="coluna3">
+								<!-- div vazia para conseguir alinhas os elementos como se fosse uma tabela invisível  -->
+							</div>
+						</div>
+
+						<div class="linha3">
+							<div class="coluna3">
+								<!-- palavra "e-mail" e campo com placeholder -->
+								<fieldset>
+									<label for="idemail">E-mail:</label>
+									<input type="email" name="email" id="idemail" placeholder="seu email aqui">
+								</fieldset>	
+							</div>
+							<div class="coluna3B">
+								<!-- botão enviar e-mail -->
+								<input type="submit" name="btnenviar" value="Enviar" id="enviar">
+							</div>
+						</div>
+					</form>
+
+				</div>
+			</section>
+		</main>
+
+
+		<!-- Rodapé da página -->
+		<footer>
+			<nav>
+				<ul>
+					<li class="linha2">
+						<h1>Onde nós estamos:</h1>
+						<br>
+						<br>
+						<a href="https://www.google.com.br/maps/place/R.+Cel.+Genu%C3%ADno,+330+-+Centro+Hist%C3%B3rico,+Porto+Alegre+-+RS,+90010-350/@-30.0366961,-51.2299522,17z/data=!3m1!4b1!4m5!3m4!1s0x95197903ecc2f335:0x9bca27b413eb0325!8m2!3d-30.0367008!4d-51.2277635" target="_blank">
+						<ion-icon name="location"></ion-icon>
+						<p>Rua Coronel Genuíno, 330<br>
+						CEP: 99632800 - Porto Alegre,<br>Rio Grande do Sul</p>
+						</a>
+					</li>
+					<li class="linha2">
+						<h1>Redes Sociais:</h1>
+						<br>
+						<br>
+						<a href="https://www.instagram.com/dogdavez/" target="_blank">	
+							<ion-icon name="logo-instagram"></ion-icon>
+							<p>Instagram</p>
+						</a>
+						<br>
+						<a href="https://www.facebook.com/" target="_blank">
+							<ion-icon name="logo-facebook"></ion-icon>
+							<p>Facebook</p>
+						</a>
+						<br>
+						<a href="https://twitter.com/home" target="_blank">
+							<ion-icon name="logo-twitter"></ion-icon>
+							<p>Twitter</p>
+						</a>
+					</li>
+					<li class="linha2">
+						<h1>Contato:</h1>
+						<br>
+						<br>
+						<a href="https://web.whatsapp.com/" target="_blank">
+							<ion-icon name="logo-whatsapp"></ion-icon>
+							<p>WhatsApp:(51)988554466</p>
+						</a>
+						<br>
+						<a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">
+							<ion-icon name="mail"></ion-icon>
+							<p>E-mail: ongpets@gmail.com</p>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<img alt="imagem menina abraçando cachorro" src="img/rodape.png">
+			
+		</footer>
+
+
+	</div>
+
+	<!-- importação da biblioteca de ícones -->
+	<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+</body>
+</html>
